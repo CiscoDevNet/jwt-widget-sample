@@ -1,7 +1,8 @@
 # jwt-widget-sample
-Cisco Webex Teams - developer sample demonstrating use of JWT with the Webex Teams widgets
+Cisco Webex - developer sample demonstrating use of Guest Issuer JWT tokens with the Webex widgets.
 
 https://developer.webex.com/docs/guest-issuer
+https://developer.webex.com/docs/widgets
 
 ## Simple messaging/video demo with hard-coded credentials
 
@@ -13,9 +14,9 @@ https://developer.webex.com/docs/guest-issuer
 
 1. Edit `public/widget.html` update the variables:
 
-    * `data-access-token` -> sign in and grab your personal access token from https://developer.webex.com/docs/api/getting-started
-    * `data-destination-id` -> = the Webex Teams user Id/email of the target user
-    * `data-destination-type` -> `email`
+    * `data-access-token`: sign in and grab your personal access token from https://developer.webex.com/docs/getting-started
+    * `data-destination-id`: the Webex Teams user Id/email of the target user
+    * `data-destination-type`: `email`
 
     >Note: the 'from' user identified with the access token must be different from the target user (you can't call yourself)
 
@@ -25,7 +26,7 @@ https://developer.webex.com/docs/guest-issuer
     node app.js
     ```
 
-3. Open http://localhost:3000/widget.html directly in a browser to confirm widget load and can send messages/video
+3. Open http://localhost:3000/widget.html directly in a browser to confirm the widget loads and can send messages/video
 
 4. Open http://localhost:3000/onebank_complete.html and click 'Ask Sandy' for popup of `widget.html`
 
